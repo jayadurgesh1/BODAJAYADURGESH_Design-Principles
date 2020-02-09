@@ -19,8 +19,17 @@ class App extends Operations
 			break;
 			case 3: System.out.println("After  Multiplying"+num1+" and "+num2+" is "+multiply(num1,num2));
 			break;
-			case 4: System.out.println("After Dividing "+num1+" and "+num2+" is "+divide(num1,num2));
-			break;
+			case 4: 
+			if (num2==0)
+			{
+				System.out.println("Math Error");
+				break;
+			}
+			else
+			{
+				System.out.println("After Dividing "+num1+" and "+num2+" is "+divide(num1,num2));
+				break;
+			}
 			case 5: break;
 			default:
 			System.out.println("ENTER VALID OPTION");
